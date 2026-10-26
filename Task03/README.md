@@ -25,5 +25,17 @@ Examples:
 - `RATE3_PAISE`
 - `FIXED_CHARGE_PAISE`
 
+  ## 4. Electricity Tariff Constants
+
+The following tariff values are used in the billing system:
+
+- `SLAB1_UNITS = 100` — First 100 units are free.
+- `SLAB2_UNITS = 100` — Next 100 units are charged at ₹2.25 per unit.
+- `RATE2_PAISE = 225` — Rate for units 101–200.
+- `RATE3_PAISE = 450` — Rate for units above 200.
+- `FIXED_CHARGE_PAISE = 5000` — Fixed charge of ₹50.
+
+These values should be stored as constants to avoid repeating tariff values throughout the program.
+
 ## Conclusion
 Defining tariff values as constants makes the billing program easier to maintain. When the tariff changes, the values can be updated in one place.
